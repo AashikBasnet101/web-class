@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 70px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Login form section */
+.login_form {
+  width: 350px;
+}
+
+.login_form h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form labels */
+.login_form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Inputs */
+.login_form input[type="email"],
+.login_form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.login_form input:focus {
+  border-color: #007bff;
+}
+
+/* Submit button */
+.login_form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login_form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Register link */
+.login_form h3 {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login_form a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login_form a:hover {
+  text-decoration: underline;
+}
+
+/* Image section */
+.image img {
+  width: 450px;
+  height: auto;
+  max-width: 100%;
+   border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .image img {
+    width: 300px;
+    
+  }
+}

@@ -1,0 +1,119 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  background-color: #e6f0ff; /* light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 60px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+}
+
+/* Registration form section */
+.register_form {
+  width: 350px;
+}
+
+.register_form h1 {
+  margin-bottom: 20px;
+  color: #007bff;  /* Blue title */
+  font-size: 28px;
+  text-align: left;
+}
+
+/* Form labels */
+.register_form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Inputs */
+.register_form input[type="text"],
+.register_form input[type="email"],
+.register_form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.register_form input:focus {
+  border-color: #007bff; /* Blue border on focus */
+}
+
+/* Submit button */
+.register_form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Blue button */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register_form input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Login link */
+.register_form h3 {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.register_form a {
+  color: #007bff; /* Blue link */
+  text-decoration: none;
+}
+
+.register_form a:hover {
+  text-decoration: underline;
+}
+
+/* Image section */
+.image img {
+  width: 450px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .image img {
+    width: 300px;
+  }
+}
